@@ -20,9 +20,9 @@
 
 
     <!--  Owl-carousel css file  -->
-    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
-
+ -->
 
     <!--  custom css file  -->
     <link rel="stylesheet" href="./css/style.css">
@@ -30,6 +30,12 @@
     <!--  Responsive css file  -->
     <link rel="stylesheet" href="./css/responsive.css">
 
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"/>
+
+    <!-- Animate Css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
 </head>
 
 <body>
@@ -40,7 +46,9 @@
     <header class="header_area">
         <div class="main-menu">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><b>WEBHUB</b></a>
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" width="80px" height="80px" alt="">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -86,10 +94,10 @@
         <section class="site-banner" id="home">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 site-title">
+                    <div class="col-lg-6 col-md-12 site-title animate__animated animate__bounceInLeft animate__delay-2s">
                         <h3 class="title-text">Hey</h3>
                         <h1 class="title-text text-uppercase">IT's WEB HUB</h1>
-                        <h4 class="title-text text-uppercase">Freelance Web service</h4>
+                        <h4 class="title-text text-uppercases">Freelance Web service</h4>
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
                                 <a type="button" class="btn button primary-button mr-4 text-uppercase" href="#contact">hire
@@ -99,7 +107,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 banner-image">
-                        <img src="./img/banner/banner-image.png" alt="banner-img" class="img-fluid">
+                        <img src="./img/banner/banner-image.png" alt="banner-img" class="img-fluid animate__animated animate__bounceInRight animate__delay-3s">
                     </div>
                 </div>
             </div>
@@ -130,7 +138,7 @@
                                 We're seeking out opportunities to collabrate with companies/agencies/individuals . We want to bring our collective web development experience to solve real business-problems in a way that opitimizes all of our respective experience and knowledge. Intrested in the entire frontend spectrum and working on ambitious projects with positive people .
                             </p>
                         </div>
-                        <a type="button" class="btn button primary-button text-uppercase" href="https://drive.google.com/file/d/18uEdaIvjc6FUkn9mY_PTnm7SmwiCp8wS/view?usp=sharing" download>Download Portfolio</a>
+                        <a type="button" class="btn button primary-button text-uppercase" download="./pdf/webhub.pdf" href="" target="_blank" download>Download Portfolio</a>
                     </div>
                 </div>
             </div>
@@ -205,7 +213,7 @@
                             <div class="d-flex flex-row flex-wrap call-area">
                                 <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
                                 <div class="call-now">
-                                    <a href="#" class="text-uppercase h4 font-roboto">Call Now</a>
+                                    <a href="#" class="text-uppercase h4 font-roboto text-decoration-none">Call Now</a>
                                     <span class="font-roboto py-2">09799667738</span>
                                 </div>
                             </div>
@@ -225,64 +233,65 @@
                 <div class="row">
                     <div class="col-lg-12 text-center services-title">
                         <h1 class="text-uppercase title-text">Services Offers</h1>
-                        <p class="para">
+                        <p class="text-loght">
                             Our clients have found that hiring us has saved them time and money, made it easier to grow their website alongside their business, and made for a product that is consistently of high quality.
                         </p>
                     </div>
                 </div>
                 <div class="container services-list">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="services">
+                        <div class="col-lg-4 col-md-6 col-sm-12 ">
+                            <div class="services mx-auto">
                                 <div class="sevices-img text-center py-4">
-                                    <img src="./img/services/s1.png" alt="Services-1">
+                                    <img src="./img/services/service3.png" alt="Services-1" width="100px" height="100px">
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">UI/UX design</h5>
-                                    <p class="card-text text-secondary ">
+                                    <p class="card-text para">
                                         WEBHUB is a leading web design service with a professional team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="services">
+                            <div class="services mx-auto">
                                 <div class="sevices-img text-center py-4">
-                                    <img src="./img/services/s2.png" alt="Services-2">
+                                    <img src="./img/services/service2.png" alt="Services-2" width="100px" height="100px">
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">Ecommerce Website</h5>
-                                    <p class="card-text text-secondary">
+                                    <h5 class="card-title text-uppercase font-roboto">Ecommerce</h5>
+                                    <p class="card-text para">
                                         Attract more online traffic and sales with a custom ecommerce website. At WEBHUB, we provide custom ecommerce website development services that include a custom and responsive design for platforms like Ecommerce. 
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="services">
+                            <div class="services mx-auto">
                                 <div class="sevices-img text-center py-4">
-                                    <img src="./img/services/s3.png" alt="Services-3">
+                                    <img src="./img/services/service1.png" alt="Services-3" width="100px" height="100px">
                                 </div>
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">web design</h5>
-                                    <p class="card-text text-secondary">
-                                        Choose our web design services, and your business can count on 100 percent transparency. From our personalized quotes to our initial designs, our team provides your company with complete access to our web design pricing and strategies.
+                                    <p class="card-text para">
+                                        Choose our web design services, and your business can count on 100 percent transparency. From our personalized quotes to our initial designs, our team provides your company with complete access to our web design .
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                    
+                        </div> 
+                        
                     </div>
                 </div>
             </div>
         </section>
 
+        
         <!--  ====================== End Services Area =============================  -->
 
         <!--  ======================= Project Area =============================  -->
 
         <section class="project-area" id="portfolio">
-            <div class="container">
+            <div class="container text-center">
                 <div class="project-title pb-5">
                     <h1 class="text-uppercase title-h1">Recently Done Project</h1>
                     <h1 class="text-uppercase title-h1">Quality Work</h1>
@@ -407,7 +416,7 @@
         </section>
 
         <!--  ======================= End Project Area =============================  -->
-
+        
         <!--  ======================== About Me Area ==============================  -->
 
         <section class="about-area" id="Testimonials">
@@ -415,7 +424,7 @@
                 <div class="row text-center">
                     <div class="col-12">
                         <div class="about-title">
-                            <h1 class="text-uppercase title-h1">Client Say about us</h1>
+                            <h1 class="text-uppercase title-h1">Client Say About Us</h1>
                             <p class="para">
                                 We have 2 years commercial experience helping start-ups, small businesses, and agencies create successful websites.
                             </p>
@@ -423,71 +432,178 @@
                     </div>
                 </div>
             </div>
-
-            <div class="container carousel py-lg-5">
-                <div class="owl-carousel owl-theme">
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">Delux Beauty Cosmetic Company</h4>
-                            <p class="para"> Working with WEBHUB was better than expected and we had really high expectations. This service is a group of incredibly talented developers but what really makes them stand out is their work ethic and steady approach. </p>
-                        </div>
-                    </div>
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">Ko Aung Myat</h4>
-                            <p class="para">Not only was WEBHUB's work on-time, they pay attention to improve the aesthetics of the site as well as the functionality.It’s obvious they take tremendous pride in their works, and I wouldn’t hesitate to recommend or work with them again.</p>
-                        </div>
-                    </div>
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">Saya APP</h4>
-                            <p class="para">WEBHUB hsa done a fantastic job overall. Not only the site is to design, the code is very clean and slick. Love the way they achieved the translations portion of the site.</p>
-                        </div>
-                    </div>
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">Delux Beauty Cosmetic Company</h4>
-                            <p class="para"> Working with WEBHUB was better than expected and we had really high expectations. This service is a group of incredibly talented developers but what really makes them stand out is their work ethic and steady approach. </p>
-                        </div>
-                    </div>
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">Saya APP</h4>
-                            <p class="para">WEBHUB hsa done a fantastic job overall. Not only the site is to design, the code is very clean and slick. Love the way they achieved the translations portion of the site.</p>
-                        </div>
-                    </div>
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">AT-Electronics</h4>
-                            <p class="para">Not only was WEBHUB's work on-time, they pay attention to improve the aesthetics of the site as well as the functionality.It’s obvious they take tremendous pride in their works, and I wouldn’t hesitate to recommend or work with them again.</p>
-                        </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <section id="client_say">
+                            <div class="testimonials-carousel-wrap">
+                                <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff"></i></div>
+                                <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff"></i></div>
+                                <div class="testimonials-carousel">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="testi-item">
+                                                    <div class="testi-avatar"><img src="img/testimonials/t1.jpg"></div>
+                                                    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                                    <div class="testimonials-text">
+                                                        <div class="listing-rating">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                        <p class="para"> Working with WEBHUB was better than expected and we had really high expectations. This service is a group of incredibly talented developers but what really makes them stand out is their work ethic and steady approach. </p>
+                                                        <a href="#" class="text-link"></a>
+                                                        <div class="testimonials-avatar">
+                                                            <h3>Kaung Satt Win</h3>
+                                                            <h4>>Delux Beauty Cosmetic Company</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                                                </div>
+                                            </div>
+                        
+                                            <!--second--->
+                                            <div class="swiper-slide">
+                                                <div class="testi-item">
+                                                    <div class="testi-avatar"><img src="img/testimonials/t2.jpg"></div>
+                                                    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                                    <div class="testimonials-text">
+                                                        <div class="listing-rating">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                        <p class="para">Not only was WEBHUB's work on-time, they pay attention to improve the aesthetics of the site as well as the functionality.It’s obvious they take tremendous pride in their works, and I wouldn’t hesitate to recommend or work with them again.</p>
+                                                        <a href="#" class="text-link"></a>
+                                                        <div class="testimonials-avatar">
+                                                            <h3>Ko Aung Myint Myat</h3>
+                                                            <h4>At-Electronic Store</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                                                </div>
+                                            </div>
+                                            <!--third-->
+                        
+                                            <div class="swiper-slide">
+                                                <div class="testi-item">
+                                                    <div class="testi-avatar"><img src="img/testimonials/6.jpg"></div>
+                                                    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                                    <div class="testimonials-text">
+                                                        <div class="listing-rating">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                        <p class="para">WEBHUB hsa done a fantastic job overall. Not only the site is to design, the code is very clean and slick. Love the way they achieved the translations portion of the site.</p>
+                                                        <a href="#" class="text-link"></a>
+                                                        <div class="testimonials-avatar">
+                                                            <h3>Saya</h3>
+                                                            <h4>Developer</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                                                </div>
+                                            </div>
+                        
+                                            <!--testi end-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tc-pagination"></div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!--  ======================== End About Me Area ==============================  -->
 
+        <!--  ========================== Start Our Team ============================  -->
+        <!-- <section id="team">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-lg-12 text-center services-title">
+                        <h1 class="text-uppercase title-text">Our Team</h1>
+                        <p class="text-loght">
+                            We are a team by combining two
+                            senior developer. We are freelance
+                            Developers in other developing         
+                            company .               
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 mx-auto my-3">                
+                        <div class="wrapper">
+                            <div class="img-area">
+                                <div class="inner-area">
+                                    <img src="./img/team/hms.jpeg">
+                                </div>
+                            </div>
+                            <div class="name">HTET MYAT SOE</div>
+                            <div class="about">
+                                Founder at Webhub 
+                             </div>
+
+                             <div class="profile-social">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/htetmyat.soe.5621"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://twitter.com/HtetMya88933722"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/htetmyatsoe927/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                </ul>
+                             </div>
+
+                             <div class="buttons">
+                                <button class="about_me_hms">ABOUT ME</button>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 mx-auto my-3">                
+                        <div class="wrapper">
+                            <div class="img-area">
+                                <div class="inner-area">
+                                    <img src="./img/team/hms.jpeg">
+                                </div>
+                            </div>
+                            <div class="name">PANN MYAT KHAING</div>
+                            <div class="about">
+                                Founder at Webhub 
+                             </div>
+
+                             <div class="profile-social">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                </ul>
+                             </div>
+
+                             <div class="buttons">
+                                <button>ABOUT ME</button>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!--  ========================== End Our Team ============================  -->
+
+
         <!--  ========================== Subscribe me Area ============================  -->
+
         <section class="subscribe-us-area" id="contact">
             <div class="container subscribe">
                 <div class="row">
@@ -513,34 +629,72 @@
             </div>
         </section>
         <!--  ========================== End Subscribe me Area ============================  -->
-
-
     </main>
     <!--  ======================= End Main Area ================================ -->
 
-    <footer class="footer-area">
+    <!-- ======================= Footer Start ======================= -->
+
+    <footer>
         <div class="container">
-            <div class="">
-                <div class="social text-center">
-                    <h5 class="text-uppercase">Follow us</h5>
-                    <a href="https://www.facebook.com/webhub776/"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+            <div class="row">
+                <div class="col-12 footer_box">
+                    <div class="footer_text">
+                        <h3>Ready To Get Start ?</h3>
+                        <h4>Talk To US Today</h4>    
+                    </div>
+                    <a href="#">GET START</a>
                 </div>
-                <div class="copyrights text-center">
-                    <p class="para">
-                        Copyright ©2019 All rights reserved | This template is made with by
-                        <a href="#"><span style="color: var(--primary-color);">Gary</span></a>
-                    </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-12 my-4 footer_logo">
+                    <img src="./img/logo.png" alt="" width="120px" height="120px">
+                    <h4>WEBHUB</h4>
+                    <P>Website Services</P>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 my-4 footer_services">
+                    <h4>OUR SERVICES</h4>
+                    <ul>
+                        <li>Ui/Ux Design</li>
+                        <li>Web Design</li>
+                        <li>Ecommerce Website</li>
+                        <li>Education Website</li>
+                        <li>Business</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 my-4 footer_about">
+                    <h4>ABOUT US</h4>
+                    <ul>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a  download="./pdf/webhub.pdf" href="" target="_blank" download>Get CV</a></li>
+                        <li><a href="#Testimonials">Client Say</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 my-4 contact_us">
+                    <h4>CONTACT US</h4>
+                    <ul>
+                        <li><img src="./img/phone-call.svg" alt="" width="30px" height="30px">
+                            &nbsp;&nbsp;09793148428</li>
+                        <li><img src="./img/phone-call.svg" alt="" width="30px" height="30px">
+                            &nbsp;&nbsp;09799667738</li>
+                        <li><img src="./img/gmail.png" alt="" width="30px" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:webhub776@gmail.com" target="_blank">webhub776@gmail.com</a></li>
+                        <li><img src="./img/address.png" alt="" width="30px" height="30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bahan Township, Yangon</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center text-light">
+                    <smaill> 2021 Copyright @ <span class="text-primary">WEBHUB</span> Website Services</smaill> 2021 
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- ======================= Footer End ======================= -->
 
     <!--  Jquery js file  -->
-    <script src="./js/jquery.3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="./js/jquery.3.4.1.js"></script> -->
+
 
     <!--  Bootstrap js file  -->
     <script src="./js/bootstrap.min.js"></script>
@@ -552,11 +706,14 @@
     <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
 
     <!--  Owl-carousel js file  -->
-    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script> -->
 
     <!--  custom js file  -->
     <script src="./js/main.js"></script>
 
+    <!-- Swiper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="./js/swip.js"></script>
 
 </body>
 

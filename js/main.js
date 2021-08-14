@@ -25,21 +25,21 @@ $(document).ready(function () {
     });
 
 
-    // Owl-carousel
+    // // Owl-carousel
 
-    $('.site-main .about-area .owl-carousel').owlCarousel({
-        loop: true,
-        autoplay: true,
-        dots: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            560: {
-                items: 2
-            }
-        }
-    })
+    // $('.site-main .about-area .owl-carousel').owlCarousel({
+    //     loop: true,
+    //     autoplay: true,
+    //     dots: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         560: {
+    //             items: 2
+    //         }
+    //     }
+    // })
 
     // sticky navigation menu
 
@@ -60,4 +60,26 @@ $(document).ready(function () {
 
     navbarFixed();
 
+
+    // Team
+
+    $(".about_me_hms").click(()=>{
+        $('.wrapper:first').html(`<ul class="list-unstyled text-dark">
+        <li><strong>Role : </strong>Founder</li>
+        <li><strong>Skill : </strong>Full-Stack Developer</li>
+        <li><strong>University : </strong>University Computer Studies, Loikaw</li>   
+        </ul>
+        <div class="buttons">
+         <button class="buttons_remove" onclick="remove_hms()"><img src="./img/team/right-arrow.png" width="40px" height="20px" alt=""></button>
+        </div>
+    `);
+    });
+    
+
+
+  
+
 });
+
+
+ 

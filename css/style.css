@@ -10,6 +10,7 @@
 @import url(./partials/_global.css);
 
 html{
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 /* start navigation */ 
@@ -23,7 +24,7 @@ html{
 }
 
 .header_area .main-menu .nav-item .nav-link{
-    font: normal 500 15px/2px var(--roboto);
+    font: normal 500 15px/2px var(--barlow);
     text-transform: uppercase;
     padding: 1.7rem;
     color: var(--title-color);
@@ -92,7 +93,7 @@ html{
 
 .site-main .about-area .about-title h2 > span{
     display: block;
-    font: normal bold 49px/ 60px var(--roboto);
+    font: normal bold 49px/ 60px var(--barlow);
     letter-spacing: 21px;
 }
 
@@ -171,13 +172,13 @@ html{
 }
 
 .site-main .brand-area .experience-area .years-area .years{
-    font: normal bold 84px/40px var(--roboto);
+    font: normal bold 84px/40px var(--barlow);
     color: var(--primary-color2);
     z-index: 2;
 }
 
 .site-main .brand-area .experience-area .years-area h2 > span{
-    font: normal 600 22px/30px var(--roboto);
+    font: normal 600 22px/30px var(--barlow);
 }
 
 .site-main .brand-area .experience-area .call-area{
@@ -276,7 +277,7 @@ html{
 .site-main .project-area .button-group button{
     background: transparent;
     border: none;
-    font: normal 500 16px/130px var(--roboto);
+    font: normal 500 16px/130px var(--barlow);
     text-transform: uppercase;
     transition: .4s ease-in;
 }
@@ -290,13 +291,18 @@ html{
 }
 
 .site-main .project-area .grid .our-project > .title h4{
-    font: normal 700 25px/12px var(--roboto);
+    font: normal 700 25px/12px var(--barlow);
 }
 
 .site-main .project-area .grid .our-project .img a:hover img{
     filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
+@media(max-width:600px){
+    .site-main .project-area .button-group button{
+        font: normal 500 14px/70px var(--barlow);
+    }
+}
 
 /* End Project Area */ 
 
@@ -312,7 +318,7 @@ html{
 }
 
 .site-main .subscribe-us-area .subscribe .subscribe-title h4{
-    font: normal 700 30px/ 30px var(--roboto);
+    font: normal 700 30px/ 30px var(--barlow);
     color: whitesmoke;
 }
 
@@ -327,7 +333,7 @@ html{
     border: 1px solid whitesmoke;
     background: transparent;
     color: white;
-    font: normal 500 17px/20px var(--roboto);
+    font: normal 500 17px/20px var(--barlow);
 }
 
 .site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
@@ -338,7 +344,9 @@ html{
     background: whitesmoke;
     color: #000;
     padding: .7rem 2rem;
+    margin: 1.5rem auto;
 }
+
 
 /* End subscribe me */ 
 
@@ -357,10 +365,10 @@ html{
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
-    
+    overflow-x: hidden;
 }
 #client_say{
-	float: left;
+	/* float: left; */
 	position: relative;
 	padding: 30px 0;
 	z-index: 1;
@@ -765,7 +773,7 @@ footer .footer_box{
 footer .footer_box a{
     height: 50px;
     padding: 14px 10px;
-    font: normal 500 16px/20px var(--roboto);
+    font: normal 500 16px/20px var(--barlow);
     border-radius: 4px;
     text-decoration: none;
     background: var(--gradient-color);
@@ -774,15 +782,39 @@ footer .footer_box a{
     box-shadow: var(--box-shadow);
 }
 
-footer .footer_box .footer_text h2{
+footer .footer_box .footer_text h3{
     color: #040125;
     text-transform: uppercase;
     font-weight: bold;
 }
 
+footer .footer_box .footer_text h4{
+    color: #040125;
+    text-transform: uppercase;
+}
+
+@media(max-width:600px){
+    
+footer .footer_box a{
+    height: 50px;
+    padding: 14px 10px;
+    font: normal 500 12px/16px var(--barlow);
+    text-decoration: none;
+}
+
 footer .footer_box .footer_text h3{
     color: #040125;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer .footer_box .footer_text h4{
+    color: #040125;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
 }
 
 footer .footer_logo{
